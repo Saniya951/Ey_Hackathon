@@ -1,0 +1,275 @@
+/* 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.navbar-links li {
+  display: inline;
+}
+
+.navbar-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar-links a:hover {
+  text-decoration: underline;
+}
+
+.voice-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.voice-controls button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.voice-controls button:first-child {
+  background-color: #4caf50;
+  color: white;
+}
+
+.voice-controls button:last-child {
+  background-color: #f44336;
+  color: white;
+}
+
+.no-support-message {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+} */
+
+/* 
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.navbar-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.voice-controls {
+  margin-top: 10px;
+}
+
+.voice-controls button {
+  margin: 0 5px;
+  padding: 10px 15px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.voice-controls button:hover {
+  background-color: #45a049;
+}
+
+.subtitle {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+}
+
+.card {
+  flex: 0 1 calc(22% - 20px); 
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+  padding: 15px;
+  transition: transform 0.2s;
+  width:20rem;
+}
+
+.card img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.card p {
+  font-size: 14px;
+  color: #777;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.no-support-message {
+  text-align: center;
+  color: red;
+  font-size: 18px;
+}
+.navbar h3 {
+  color: #027f73;
+} */
+
+/* Ensure the entire body takes up the viewport */
+body {
+  background-color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full viewport height */
+}
+
+/* Header section */
+.navbar-header {
+  text-align: center;
+  justify-content: center; /* Center content vertically */
+  align-items: center;
+  padding: 20px;
+  flex-shrink: 0; /* Prevent header from shrinking */
+}
+
+.header-box {
+  background-color: #07B4A3;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  height: 20rem;
+  width: 100%; /* Full width of the screen */
+  box-sizing: border-box; /* Include padding in width */
+}
+
+/* .header-box h1 {
+  margin: 2rem;
+} */
+
+/* Add spacing below the header */
+.voice-controls {
+  margin-top: 20px;
+}
+
+.voice-controls button {
+  background-color: #027F73;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  height:5rem;
+  width:30rem;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.voice-controls button:hover {
+  opacity: 0.8;
+}
+
+/* Subtitle styling */
+.subtitle {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Main container: take full height and center the content */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Spread cards evenly across the row */
+  align-items: center;
+  gap: 30px; /* Space between cards */
+  flex: 1; /* Make this section grow to fill available space */
+  padding: 10px 450px;
+  width: 100%; /* Use full width of the screen */
+  box-sizing: border-box; /* Include padding in width */
+}
+
+/* Card styling */
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 20px;
+  width: 20rem; /* Fixed width for all cards */
+  height: 15rem; /* Fixed height for all cards */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin: 10px; /* Add spacing around each card */
+}
+
+.card img {
+  width: 10rem;
+  height: 10rem;
+}
+
+.card h3 {
+  margin: 15px 0 10px;
+  font-size: 2rem;
+}
+
+.card p {
+  color: #555;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer section: optional */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #07B4A3;
+  color: white;
+  flex-shrink: 0; /* Prevent footer from shrinking */
+}
+
+.navbar h3 {
+  color: #027f73;
+}
