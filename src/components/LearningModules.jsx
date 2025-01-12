@@ -88,6 +88,7 @@ import "../cssfiles/LearningModules.css";
 import investmentIcon from "../icons/investments.png";
 import loan from "../icons/loan.png";
 import savings from "../icons/savings.png";
+import budget from "../icons/budget.png";
 
 const LearningModules = () => {
   const [activeTab, setActiveTab] = useState("Budgeting");
@@ -96,50 +97,62 @@ const LearningModules = () => {
     Budgeting: [
       {
         url: "https://www.youtube.com/embed/INnPo0QPXf4?si=bRFAL3dxFhxy9AEE",
-        title: "Budget Video 1",
+        title: "What is budgeting?",
       },
       {
-        url: "https://www.youtube.com/embed/INnPo0QPXf4?si=bRFAL3dxFhxy9AEE",
-        title: "Budget Video 2",
+        url: "https://www.youtube.com/embed/-ANjtUiYbZ8?si=_SifW1qIb4JjasMO",
+        title: "Indian Budgeting",
       },
       {
-        url: "https://www.youtube.com/embed/INnPo0QPXf4?si=bRFAL3dxFhxy9AEE",
-        title: "Budget Video 3",
+        url: "https://www.youtube.com/embed/sVKQn2I4HDM?si=sHiaEEjGy5FZJkBc",
+        title: "Budget Basics",
+      },
+      {
+        url: "https://www.youtube.com/embed/U0a0JErlA5U?si=006uIcctqQWd6Ksy",
+        title: "Simplifying concept of budget",
       },
     ],
     Savings: [
       {
         url: "https://www.youtube.com/embed/iZGljcA3G24?si=QMNPno-rCE_PRjyS",
-        title: "Savings Video 1",
+        title: "Checking Savings and Accounts",
       },
       {
-        url: "https://www.youtube.com/embed/iZGljcA3G24?si=QMNPno-rCE_PRjyS",
-        title: "Savings Video 2",
+        url: "https://www.youtube.com/embed/sCiE4X_y1a0?si=dKxHf48HqdaH91F4",
+        title: "What is Savings Account?",
       },
       {
-        url: "https://www.youtube.com/embed/iZGljcA3G24?si=QMNPno-rCE_PRjyS",
-        title: "Savings Video 3",
+        url: "https://www.youtube.com/embed/0SpI5CCmfNU?si=mCIjI6576KjhaFNA",
+        title: "Regular Savings",
+      },
+      {
+        url: "https://www.youtube.com/embed/D740SawepFU?si=nRUwqeku-gDrrcRB",
+        title: "Savings accounts vs Current account",
       },
     ],
     Investments: [
       {
         url: "https://www.youtube.com/embed/qIw-yFC-HNU?si=KOaeuXwGH4mD7BGE",
-        title: "Investments Video 1",
+        title: "The Basics of Investing ",
       },
       {
-        url: "https://www.youtube.com/embed/qIw-yFC-HNU?si=KOaeuXwGH4mD7BGE",
-        title: "Investments Video 2",
+        url: "https://www.youtube.com/embed/lNdOtlpmH5U?si=ICbK1rseAiFv8p5c",
+        title: "How to Invest for Beginners",
       },
       {
-        url: "https://www.youtube.com/embed/qIw-yFC-HNU?si=KOaeuXwGH4mD7BGE",
-        title: "Investments Video 3",
+        url: "https://www.youtube.com/embed/Arz_9WX-pn0?si=PdsvfX-kGy7qD8Kd",
+        title: "What is Investing",
+      },
+      {
+        url: "https://www.youtube.com/embed/tHxwyWnNu0c?si=qd34zxLv2AenPoUZ",
+        title: "How to start Investing?",
       },
     ],
   };
 
   const concepts = [
     {
-      src:  investmentIcon ,
+      src: investmentIcon,
       title: "Investments",
       link: "https://www.investopedia.com/",
     },
@@ -152,6 +165,11 @@ const LearningModules = () => {
       src: savings,
       title: "Money Saving",
       link: "https://www.moneysavingexpert.com/",
+    },
+    {
+      src: budget,
+      title: "Budgets",
+      link: "https://www.stash.com/learn/budgeting-for-young-adults/",
     },
   ];
 

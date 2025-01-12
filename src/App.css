@@ -19,7 +19,7 @@
 #google_translate_element{
   border: 2px solid;
   border-radius: 5px;
-  background-color: #888;
+  background-color: #027f73;
   
 
 }
@@ -36,11 +36,13 @@ body > .goog-te-banner-frame {
   outline: none;
   padding: 5px;
   transition: color 0.3s ease, transform 0.3s ease;
-  background-color: #888;
+  background-color: #027f73;
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 8px;
+  right: 50px;
   margin-bottom: 5pxs;
+  height: 1.5rem;
+  width: 20rem;
 }
 
 
@@ -51,7 +53,7 @@ body > .goog-te-banner-frame {
   color: white;
   transition: color 0.3s ease, transform 0.3s ease;
   cursor: pointer;
-  background-color: #888;
+  background-color: #027f73;
 }
 
 #languageSelect:hover, .lang:hover{

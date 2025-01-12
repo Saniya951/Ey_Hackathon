@@ -4,20 +4,25 @@
   width: 100%;
 }
 
-.tabs-section h2 {
+.tabs-section {
   text-align: center;
+  margin-bottom: 20px;
+}
+
+.tabs-section h2 {
+  font-size: 3rem;
   margin-bottom: 10px;
 }
 
 .tabs-section p {
-  text-align: center;
-  color: gray;
-  font-size: 1rem;
+  color: rgb(71, 71, 71);
+  font-size: 1.5rem;
+  margin-bottom: 70px;
 }
 
 .tabs {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   margin-bottom: 20px;
 }
 
@@ -25,10 +30,10 @@
   margin: 0 10px;
   padding: 12px 24px;
   border: none;
-  background-color: #888;
+  background-color: #bbbaba;
   cursor: pointer;
   border-radius: 5px;
-  font-size: 1rem;
+  font-size: 1.5rem;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -46,12 +51,14 @@
   display: flex;
   flex-wrap: nowrap;
   width: 100%;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+  /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+  gap: 70px;
+  font-size: 1.5rem;
 }
 
 .video-card {
   text-align: center;
+  font-size: 1.5rem;
   border: 1px solid #e0e0e0;
   border-radius: 10px;
   padding: 15px;
@@ -78,7 +85,8 @@
   display: flex;
   flex-wrap: nowrap;
   width: 100%;
-  gap: 20px;
+  gap: 70px;
+  font-size: 1.5rem;
 }
 
 .concept-card {
@@ -104,6 +112,7 @@
 } */
 
 .concept-card img {
+  width:600px;
   max-width: 100%;
   max-height: 220px; /* To fit within the card dimensions */
   object-fit: cover;
@@ -115,27 +124,32 @@
   height: 100px;
   margin-bottom: 10px; 
 } */
+.concepts-section h3 {
+  text-align: left;
+  font-size: 30px;
+}
 
 .quiz-section {
-  text-align: center;
+  text-align: left;
   margin-top: 20px;
+  font-size: 1.5rem;
 }
 
 .quiz-buttons {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
   gap: 15px;
 }
 
 .quiz-buttons button {
   margin: 10px;
-  padding: 10px 20px;
+  padding: 25px 35px;
+  font-size: 1.5rem;
   border: none;
   background-color: #07b4a3;
   color: white;
   border-radius: 5px;
-  font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -156,10 +170,10 @@
     max-width: 200px;
   }
 
-  .videos-container,
+  /* .videos-container,
   .concepts-container {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  }
+  } */
 
   .video-card,
   .concept-card {
