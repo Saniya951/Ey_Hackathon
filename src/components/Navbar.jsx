@@ -215,7 +215,7 @@ const Navbar = () => {
           <div className="card">
             <img src={communitySupportIcon} alt="Community Support" />
             <h3>Community Support</h3>
-            <p>Connect with mentors and other women.</p>
+            <p>Empowering women mentors and investors.</p>
           </div>
         </Link>
 

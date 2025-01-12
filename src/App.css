@@ -12,3 +12,48 @@
 .read-the-docs {
   color: #888;
 }
+
+
+
+
+#google_translate_element{
+  border: 2px solid;
+  border-radius: 5px;
+  background-color: #888;
+  
+
+}
+
+body > .skiptranslate > iframe.skiptranslate,
+body > .goog-te-banner-frame {
+  display: none !important;
+}
+
+
+.lang{
+  border:2px solid  #888;
+  border-radius: 5px;
+  outline: none;
+  padding: 5px;
+  transition: color 0.3s ease, transform 0.3s ease;
+  background-color: #888;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  margin-bottom: 5pxs;
+}
+
+
+#languageSelect{
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  transition: color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+  background-color: #888;
+}
+
+#languageSelect:hover, .lang:hover{
+  transform: scale(1.05); 
+}

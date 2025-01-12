@@ -99,8 +99,59 @@ const App = () => {
     }
   }, [transcript]);
 
+
+
+
+  useEffect(() => {
+    // Ensure that the Google Translate widget is initialized
+    if (window.google && window.google.translate) {
+      window.googleTranslateElementInit();
+    }
+  }, []);
+
+  const handleLanguageChange = (event) => {
+    const selectedLanguage = event.target.value;
+
+    try {
+      if (window.google && window.google.translate && window.google.translate.TranslateElement) {
+        const translateSelect = document.querySelector(".goog-te-combo");
+        if (translateSelect) {
+          translateSelect.value = selectedLanguage;
+          translateSelect.dispatchEvent(new Event("change"));
+        } else {
+          console.error("Google Translate dropdown not found.");
+        }
+      } else {
+        console.error("Google Translate library is not loaded.");
+      }
+    } catch (error) {
+      console.error("Error changing language: ", error);
+    }
+  };
+
+
+
   return (
     <div className="app">
+
+      <div className="lang">
+      <select id="languageSelect" onChange={handleLanguageChange}>
+        <option value="en">English</option>
+        <option value="hi">Hindi</option>
+        <option value="ta">Tamil</option>
+        <option value="bn">Bengali</option>
+        <option value="te">Telugu</option>
+        <option value="ml">Malayalam</option>
+        <option value="gu">Gujarati</option>
+        <option value="kn">Kannada</option>
+        <option value="mr">Marathi</option>
+        <option value="pa">Punjabi</option>
+        <option value="or">Odia</option>
+        <option value="as">Assamese</option>
+        <option value="kok">Konkani</option>
+      </select>
+      </div>
+
       <Navbar />
       <Routes>
         <Route path="/chatbot" element={<Chatbot />} />

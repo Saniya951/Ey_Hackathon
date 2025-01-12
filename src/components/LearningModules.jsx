@@ -177,7 +177,7 @@ const LearningModules = () => {
         {videos[activeTab].map((video, index) => (
           <div key={index} className="video-card">
             <iframe
-              width="600"
+              width="400"
               height="300"
               src={video.url}
               title={video.title}
